@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+.body {
+background: black;
+}
+
+.asterjdm {
+font-family: 'Comfortaa', cursive;
+color: white;
+text-align: center;
+font-size: 400%;
+position: relative;
+margin-top: 10%;
+animation-name: slide;
+animation-duration: 1s;
+margin-bottom: auto;
+}
+
+.slogan {
+color: white;
+font-family: 'Comfortaa', cursive;
+text-align: center;
+animation-name: fade;
+animation-duration: 1s;
+}
+
+.present {
+color: white;
+font-family: 'Comfortaa', cursive;
+text-align: center;
+animation-name: fade;
+animation-duration: 1s;
+font-size: 400%;
+}
+
+.project1, .project2 {
+background: white;
+margin-top: 5px;
+float: left;
+width: 50%;
+}
+
+.projects {
+margin-top: 20%;
+border-color: black;
+border-style: solid;
+border-width: 20px;
+clear: both;
+overflow: auto;
+animation-name: fade;
+animation-duration: 1s;
+}
+
+.cescosite {
+height: 300px;
+}
+
+.elements {
+padding-top: 5px;
+text-align: center;
+}
+
+@keyframes fade {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+
+@keyframes slide {
+from {
+margin-top: 8%;
+}
+to {
+margin-top: 10%;
+}
+}
+
+@media (min-width: 1024px) {
+
+
+
+.asterjdm {
+
+	font-size: 1000%;
+
+}
+
+.project {
+
+	width: 50%;
+	display: inline-block;
+	float: left;
+}
+
+.cescosite {
+height: 400px;
+}
