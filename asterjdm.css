@@ -1,100 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
 
-.body {
-background: black;
+body {
+
+	background-color: black;
+	animation-name: fade_in;
+	animation-duration: 1.2s;
+
 }
 
-.asterjdm {
-font-family: 'Comfortaa', cursive;
-color: white;
-text-align: center;
-font-size: 400%;
-position: relative;
-margin-top: 10%;
-animation-name: slide;
-animation-duration: 1s;
-margin-bottom: auto;
+.slide {
+
+	animation-name: slide_down;
+	animation-duration: 1.2s;
+}
+
+.title {
+
+	color: white;
+	font-size: 150px;
+	text-align: center;
+	font-family: 'Nunito Sans', sans-serif;
+
 }
 
 .slogan {
-color: white;
-font-family: 'Comfortaa', cursive;
-text-align: center;
-animation-name: fade;
-animation-duration: 1s;
-}
 
-.present {
-color: white;
-font-family: 'Comfortaa', cursive;
-text-align: center;
-animation-name: fade;
-animation-duration: 1s;
-font-size: 400%;
-}
 
-.project1, .project2 {
-background: white;
-margin-top: 5px;
-float: left;
-width: 50%;
+	color: white;
+	font-size: 30px;
+	margin-top: -120px;
+	text-align: center;
+	font-family: 'Nunito Sans', sans-serif;
+
 }
 
 .projects {
-margin-top: 20%;
-border-color: black;
-border-style: solid;
-border-width: 20px;
-clear: both;
-overflow: auto;
-animation-name: fade;
-animation-duration: 1s;
-}
 
-.cescosite {
-height: 300px;
-}
-
-.elements {
-padding-top: 5px;
-text-align: center;
-}
-
-@keyframes fade {
-from {
-opacity: 0;
-}
-to {
-opacity: 1;
-}
-}
-
-@keyframes slide {
-from {
-margin-top: 8%;
-}
-to {
-margin-top: 10%;
-}
-}
-
-@media (min-width: 1024px) {
-
-
-
-.asterjdm {
-
-	font-size: 1000%;
+	display: flex;
+	justify-content: center;
 
 }
 
-.project {
+.projects_title {
 
-	width: 50%;
-	display: inline-block;
-	float: left;
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	font-family: 'Nunito Sans', sans-serif;
+
 }
 
-.cescosite {
-height: 400px;
+.projects_images, .members_images {
+
+	width: 100px;
+	height: 100px;
+	flex-grow: 1;
+	transition: 0.3s;
+	margin-left: 5px;
+	margin-right: 5px;
+	align-self: center;
+	margin-bottom: 10px;
+ 
+}
+
+.members {
+
+	display: flex;
+	justify-content: center;
+
+}
+
+.members_title {
+
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.member {
+
+	margin: 10px;
+	display: flex;
+	max-width: 200px;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.project_name, .member_name {
+  
+	margin: 0;
+	color: white;
+	padding: 10px;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.projects_images:hover, .members_images:hover { 
+
+	margin-top: -5px;
+	box-shadow: 5px 5px 5px white;
+
+}
+
+@keyframes fade_in {
+
+	from {
+
+		opacity: 0%;
+
+	}
+
+	to {
+
+		opacity: 100%;
+
+	}
+
+}
+
+@keyframes slide_down {
+
+
+	from {
+
+		margin-top: -20px;
+
+	}
+
+	to {
+
+		margin-top: 0px;
+
+	}
+
 }
